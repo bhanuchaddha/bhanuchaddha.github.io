@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>redis on </title>
+    <link>/tags/redis/</link>
+    <description>Recent content in redis on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 01 Jun 2019 01:11:42 +0200</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>/using-redis-pub/sub-with-spring-boot/</guid>
       <description>Redis is an open source, in-memory data structure store, used as a database, cache and message broker. Here we would use Redis as Message Broker to create messaging layer in our demo finance application. This application consist of multiple micro services which interact with each other. We would create event driven construct, where services would connect to messaging layer and would publish and subscribe events to messaging layer. Auto reloading feature does not work out of the box in Intellij.</description>
-    </item>
-    
-    <item>
-      <title>Spring Boot Devtools with Intellij</title>
-      <link>/spring-boot-devtools-with-intellij/</link>
-      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
-      
-      <guid>/spring-boot-devtools-with-intellij/</guid>
-      <description>Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.
-Spring Boot provide niche feature of hot reloading for a Spring Boot application.
-It recompile your java application as soon as you make a change. But most important aspect is that it only recompile only those files in which changes are made. Thus process take quite a short time compared to complete application build.</description>
     </item>
     
   </channel>

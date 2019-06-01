@@ -6,7 +6,7 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 31 May 2019 01:11:42 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 01:11:42 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>backend</title>
       <link>/tags/backend/</link>
-      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
       
       <guid>/tags/backend/</guid>
       <description></description>
@@ -23,9 +23,36 @@
     <item>
       <title>development</title>
       <link>/tags/development/</link>
-      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
       
       <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>/tags/java/</link>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
+      
+      <guid>/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>/tags/redis/</link>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
+      
+      <guid>/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>springboot</title>
+      <link>/tags/springboot/</link>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
+      
+      <guid>/tags/springboot/</guid>
       <description></description>
     </item>
     
@@ -35,24 +62,6 @@
       <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
       
       <guid>/tags/intellij/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>/tags/java/</link>
-      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
-      
-      <guid>/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>springboot</title>
-      <link>/tags/springboot/</link>
-      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
-      
-      <guid>/tags/springboot/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content in springboot on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 31 May 2019 01:11:42 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 01:11:42 +0200</lastBuildDate>
     
 	<atom:link href="/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Redis Pub/Sub with Spring Boot</title>
+      <link>/using-redis-pub/sub-with-spring-boot/</link>
+      <pubDate>Sat, 01 Jun 2019 01:11:42 +0200</pubDate>
+      
+      <guid>/using-redis-pub/sub-with-spring-boot/</guid>
+      <description>Redis is an open source, in-memory data structure store, used as a database, cache and message broker. Here we would use Redis as Message Broker to create messaging layer in our demo finance application. This application consist of multiple micro services which interact with each other. We would create event driven construct, where services would connect to messaging layer and would publish and subscribe events to messaging layer. Auto reloading feature does not work out of the box in Intellij.</description>
+    </item>
     
     <item>
       <title>Spring Boot Devtools with Intellij</title>
