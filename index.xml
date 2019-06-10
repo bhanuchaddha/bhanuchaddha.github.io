@@ -6,7 +6,7 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 01 Jun 2019 01:11:42 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 01:22:42 +0200</lastBuildDate>
     
 	<atom:link href="https://bhanuchaddha.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,17 @@
       <description>Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.
 Spring Boot provide niche feature of hot reloading for a Spring Boot application.
 It recompile your java application as soon as you make a change. But most important aspect is that it only recompile only those files in which changes are made. Thus process take quite a short time compared to complete application build.</description>
+    </item>
+    
+    <item>
+      <title>Create your own blog website using Hugo in less than 1 hour for free</title>
+      <link>https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/</link>
+      <pubDate>Wed, 05 Jun 2019 01:22:42 +0200</pubDate>
+      
+      <guid>https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/</guid>
+      <description>In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much more.
+It is almost defacto to use Medium for bloging now a days. It provides many benfits like :
+ Content focus. Formatting is handled by Medium platform itself SEO (Search Engin Optimization) to promote your article in google search Easy interface to write article in browser itself And many more like support for images, videos and code reference using Gist  Then Why shoud you have your own blog?</description>
     </item>
     
   </channel>

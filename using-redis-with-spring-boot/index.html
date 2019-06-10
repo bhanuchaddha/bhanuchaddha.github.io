@@ -77,7 +77,7 @@
             </li>
         
             <li class="" role="menuitem">
-              <a href="/categories/life/">Life</a>
+              <a href="/categories/tutorial/">Tutorial</a>
             </li>
         
       </ul></div>
@@ -122,17 +122,17 @@
         
 
 <blockquote>
-<p>Redis is an open source, in-memory data structure store, used as a database, cache and message broker. Here we would use <a href="https://redis.io/">Redis</a> as Message Broker to create messaging layer in our demo finance application. <a href="https://github.com/bhanuchaddha/Finance-System">This</a> application consist of multiple micro services which interact with each other. We would create event driven construct, where services would connect to messaging layer and would publish and subscribe events to messaging layer.
+<p>Redis is an open source, in-memory data structure store, used as a database, cache and message broker. Here we would use <a href="https://redis.io/" target="_blank">Redis</a> as Message Broker to create messaging layer in our demo finance application. <a href="https://github.com/bhanuchaddha/Finance-System" target="_blank">This</a> application consist of multiple micro services which interact with each other. We would create event driven construct, where services would connect to messaging layer and would publish and subscribe events to messaging layer.
 Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.</p>
 </blockquote>
 
-<p>In <a href="https://github.com/bhanuchaddha/Finance-System">this</a> application we have an Account Service which provide account information of the customers and a Payment Service which provide the payment information of the customer. You can check the complete application <a href="https://github.com/bhanuchaddha/Finance-System">here</a> .We would set up messaging between these two services. Whenever a new payment would be created using Payment Service, An event would be published to the messaging layer. Our Account service would receive this event and update the balance in accounts.</p>
+<p>In <a href="https://github.com/bhanuchaddha/Finance-System" target="_blank">this</a> application we have an Account Service which provide account information of the customers and a Payment Service which provide the payment information of the customer. You can check the complete application <a href="https://github.com/bhanuchaddha/Finance-System" target="_blank">here</a> .We would set up messaging between these two services. Whenever a new payment would be created using Payment Service, An event would be published to the messaging layer. Our Account service would receive this event and update the balance in accounts.</p>
 
 <p>We would implement this set up in 3 steps.</p>
 
 <h2 id="step-1-setting-up-redis-server">Step 1: Setting up Redis server</h2>
 
-<p>We can run redis locally by following steps on <a href="https://redis.io/download">Redis official website</a>. Or you can run embedded redis in your application. I have taken later approach in this case. Check out <a href="https://github.com/bhanuchaddha/Bank-on-Cloud/tree/master/messaging-layer">Messaging Layer</a>.</p>
+<p>We can run redis locally by following steps on <a href="https://redis.io/download" target="_blank">Redis official website</a>. Or you can run embedded redis in your application. I have taken later approach in this case. Check out <a href="https://github.com/bhanuchaddha/Bank-on-Cloud/tree/master/messaging-layer" target="_blank">Messaging Layer</a>.</p>
 
 <p>I have added embedded-redis as dependency in our maven project.</p>
 
@@ -215,13 +215,13 @@ public RedisTemplate&lt;String, Payment&gt; redisTemplate() {
 
 <p>That’s all needed to setup in our application to connect and publish event to our Redis server.</p>
 
-<p>I have configured Jackson2JsonRedisSerializer to serialize our <a href="https://github.com/bhanuchaddha/Bank-on-Cloud/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/Payment.java">Payment</a> object to string correctly on the topic. Here I am publishing whole payment object as an event but we could create a custom event as well to publish.</p>
+<p>I have configured Jackson2JsonRedisSerializer to serialize our <a href="https://github.com/bhanuchaddha/Bank-on-Cloud/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/Payment.java" target="_blank">Payment</a> object to string correctly on the topic. Here I am publishing whole payment object as an event but we could create a custom event as well to publish.</p>
 
 <p>Now we can autowire our Redis Template to any service layer to send a event to our payment topic.</p>
 
-<p>Here I have created a wrapper class <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/RedisMessagePublisher.java">RedisMessagePublisher</a> and used that in service layer PaymentEventHandler.</p>
+<p>Here I have created a wrapper class <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/RedisMessagePublisher.java" target="_blank">RedisMessagePublisher</a> and used that in service layer PaymentEventHandler.</p>
 
-<p>I am using <a href="https://spring.io/projects/spring-data-rest">Spring Data Rest</a> and <code>@RepositoryEventHandler(Payment.class)</code> to hook <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/RedisMessagePublisher.java">RedisMessagePublisher</a>. But Redis Template can be used directly from any class. Below is how I am using the Redis Template.</p>
+<p>I am using <a href="https://spring.io/projects/spring-data-rest" target="_blank">Spring Data Rest</a> and <code>@RepositoryEventHandler(Payment.class)</code> to hook <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/payment/src/main/java/com/bhanuchaddha/bank/payment/RedisMessagePublisher.java" target="_blank">RedisMessagePublisher</a>. But Redis Template can be used directly from any class. Below is how I am using the Redis Template.</p>
 
 <pre><code class="language-java">@Service
 public class RedisMessagePublisher implements MessagePublisher {
@@ -255,7 +255,7 @@ public class PaymentEventHandler {
 
 <h2 id="step-3-subscribe-event-from-redis-server">Step 3: Subscribe event from Redis Server</h2>
 
-<p>We would configure <a href="https://github.com/bhanuchaddha/Finance-System/tree/master/account">Account Service</a> to subscribe events from our “payments” topic at Redis Server.</p>
+<p>We would configure <a href="https://github.com/bhanuchaddha/Finance-System/tree/master/account" target="_blank">Account Service</a> to subscribe events from our “payments” topic at Redis Server.</p>
 
 <h3 id="add-redis-client-dependency-1"><strong>Add Redis client dependency</strong></h3>
 
@@ -271,9 +271,9 @@ public class PaymentEventHandler {
 
 <h3 id="add-message-listener"><strong>Add Message Listener</strong></h3>
 
-<p>Events from our “payments” topic would arrive at the <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/account/src/main/java/com/bhanuchaddha/bank/accounts/RedisMessageSubscriber.java">Message Listener</a> and from there we can use the event as we need. We need to implement onMessage method of MessageListener interface. In our case I am using this event to adjust the balance in Accounts.</p>
+<p>Events from our “payments” topic would arrive at the <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/account/src/main/java/com/bhanuchaddha/bank/accounts/RedisMessageSubscriber.java" target="_blank">Message Listener</a> and from there we can use the event as we need. We need to implement onMessage method of MessageListener interface. In our case I am using this event to adjust the balance in Accounts.</p>
 
-<p>Lets Implement the <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/account/src/main/java/com/bhanuchaddha/bank/accounts/RedisMessageSubscriber.java">Message Listener</a>.</p>
+<p>Lets Implement the <a href="https://github.com/bhanuchaddha/Finance-System/blob/master/account/src/main/java/com/bhanuchaddha/bank/accounts/RedisMessageSubscriber.java" target="_blank">Message Listener</a>.</p>
 
 <pre><code class="language-java">@Service
 public class RedisMessageSubscriber implements MessageListener {
@@ -341,7 +341,7 @@ public class MessagingConfiguration {
 
 <p>That’s it!!! This is all you need to use Redis Pub/Sub with Spring boot application.</p>
 
-<p>Lets test our application now. Check out the source code from <a href="https://github.com/bhanuchaddha/Finance-System">here</a>. And run above mentioned Accounts and Payments services with Messaging layer service.</p>
+<p>Lets test our application now. Check out the source code from <a href="https://github.com/bhanuchaddha/Finance-System" target="_blank">here</a>. And run above mentioned Accounts and Payments services with Messaging layer service.</p>
 
 <p>Now if you create 2 accounts, say 1 and 2. Run below command twice to do that. It will create account number 1 and account number 2 both with the balance of 200.</p>
 
