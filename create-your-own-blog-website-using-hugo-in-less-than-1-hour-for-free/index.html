@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en-US" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Create your own blog website using Hugo in less than 1 hour for free &middot; </title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://bhanuchaddha.github.io/favicon.ico" />
+    <link rel="canonical" href="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/" />
+
+     <meta name="description" content="In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much mor" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://bhanuchaddha.github.io/image/3/selfBlog.png"/>
+    
+ 
+    <meta name="twitter:title" content="Create your own blog website using Hugo in less than 1 hour for free"/>
+    <meta name="twitter:description" content="In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much mor"/>
+    <meta name="twitter:url" content="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/" />
+    <meta name="twitter:site" content="@bhanu_chaddha"/>
+
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Create your own blog website using Hugo in less than 1 hour for free &middot; " />
+    <meta property="og:url" content="https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/" />
+    <meta property="article:publisher" content="https://www.facebook.com/bhanu.chaddha" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much mor" />
+
+    <meta property="article:published_time" content="2019-06-05T01:22:42&#43;02:00" />
+    <meta property="article:tag" content="hugo" /><meta property="article:tag" content="frontend" /><meta property="article:tag" content="blog" /><meta property="article:tag" content="tutorial" />
+
+    <meta property="og:image" content="https://bhanuchaddha.github.io/image/3/selfBlog.png"/>
+
+
+    <meta name="generator" content="Hugo 0.55.6" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://bhanuchaddha.github.io/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://bhanuchaddha.github.io/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+    
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Blog</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/backend/">Backend</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/frontend/">Frontend</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/categories/tutorial/">Tutorial</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/bhanu.chaddha" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/bhanu_chaddha" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/bhanuchaddha" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/bhanu-chaddha" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+
+                    <a class="social-link" href="https://medium.com/@bhanuchaddha" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 195"><path d="M46.5340803,65.2157554 C46.6968378,63.6076572 46.0836,62.018231 44.8828198,60.93592 L32.6512605,46.2010582 L32.6512605,44 L70.6302521,44 L99.9859944,108.380952 L125.794585,44 L162,44 L162,46.2010582 L151.542017,56.2281011 C150.640424,56.9153477 150.193188,58.0448862 150.380019,59.1628454 L150.380019,132.837155 C150.193188,133.955114 150.640424,135.084652 151.542017,135.771899 L161.755369,145.798942 L161.755369,148 L110.38282,148 L110.38282,145.798942 L120.963119,135.527337 C122.002801,134.487948 122.002801,134.182246 122.002801,132.592593 L122.002801,73.0417402 L92.585901,147.755438 L88.6106443,147.755438 L54.3622782,73.0417402 L54.3622782,123.115814 C54.0767278,125.221069 54.7759199,127.3406 56.2581699,128.863022 L70.0186741,145.55438 L70.0186741,147.755438 L31,147.755438 L31,145.55438 L44.7605042,128.863022 C46.2319621,127.338076 46.8903838,125.204485 46.5340803,123.115814 L46.5340803,65.2157554 Z"/></svg></a>
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2019-06-05">5 June 2019</time>
+                <span class="date-divider">/</span> <a href="https://bhanuchaddha.github.iotags/hugo/">#hugo</a>&nbsp;<a href="https://bhanuchaddha.github.iotags/frontend/">#frontend</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">Create your own blog website using Hugo in less than 1 hour for free</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://bhanuchaddha.github.io/image/3/selfBlog.png)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        
+
+<p>In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much more.</p>
+
+<p>It is almost defacto to use <a href="https://medium.com/" target="_blank">Medium</a> for bloging now a days. It provides many benfits like :</p>
+
+<ul>
+<li>Content focus. Formatting is handled by Medium platform itself</li>
+<li>SEO (Search Engin Optimization) to promote your article in google search</li>
+<li>Easy interface to write article in browser itself</li>
+<li>And many more like support for images, videos and code reference using <a href="https://gist.github.com/" target="_blank">Gist</a></li>
+</ul>
+
+<p><strong>Then Why shoud you have your own blog?</strong></p>
+
+<p>Having your own blog provide you the chance to add one more aspact of social presence. You can control the content as you want and decide whether your content should be paid or open to all. You can also use this blog website as your portfolio if you want.</p>
+
+<h2 id="how-did-i-do-it">How did I do it?</h2>
+
+<p>After writing couple of <a href="https://medium.com/@bhanuchaddha" target="_blank">articles</a> on medium. I though of setting up my own blog website. I looking into couple of options like :</p>
+
+<ul>
+<li><a href="https://wordpress.com/" target="_blank">WordPress</a></li>
+<li><a href="https://www.wix.com/blog" target="_blank">Wix</a></li>
+<li><a href="https://ghost.org/" target="_blank">Ghost</a></li>
+</ul>
+
+<p>These platform provide you end to end solution to setup your own website. In this setup you need to think about website template, database, hosting and managing siteadmin. These platform are either paid or partialy free. But as the tiltle of the article suggest, I wanted to create blog for free. And I bet you are also here for the same.</p>
+
+<p>Apart from being free I also wanted the blog setup to be mimimal. That means I only wanted to manage the content of the blog and not the look and feel or formatting. So that I can save myself from the hassel of managing UX, Styling, Hosting, Database and other elements of website management. It was inspired from the experience of writing a blog on Medium. Just write the content at correct location and <strong>Boom!!</strong>.</p>
+
+<p>I was aware that github allow you to have single User and multiple project website hosting for free if this is a open source project. You can read about it <a href="https://pages.github.com/" target="_blank">here</a>.</p>
+
+<p>But the only catch is github pages only support static website ( no Server, no Database). Thus I wanted a way to generate static website with evolving content.</p>
+
+<h2 id="here-comes-the-hugo">Here comes the Hugo</h2>
+
+<p>My search brought me to an awesome to framework called <a href="https://gohugo.io/" target="_blank">Hugo</a>. Quoting from the offical website</p>
+
+<blockquote>
+<p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+</blockquote>
+
+<p>Hugo can be used for complete Content Management where content can be provided in many ways. It has lot of feature for customization and organizing the content. For the brevity of the blog I would not go into the details of <a href="https://gohugo.io/" target="_blank">Hugo</a>. Remember we have less than 1 hour.</p>
+
+<h2 id="shut-up-and-show-me-the-code">Shut Up!! and Show me the code</h2>
+
+<p>Ok Ok.. Lets do that</p>
+
+<p>We gonna need to do exactly 5 steps to set up our website:</p>
+
+<ol>
+<li>Download and Set up Hugo</li>
+<li>Create Project</li>
+<li>Write Your Blog</li>
+<li>Set up git repositories</li>
+<li>Push your content and Done!!</li>
+</ol>
+
+<p>I have followed the same steps while creating my own blog website. You can check it here <a href="https://bhanuchaddha.github.io/" target="_blank">Bhanu Chaddha&rsquo;s blog</a></p>
+
+<h3 id="1-download-and-set-up-hugo"><strong>1. Download and Set up Hugo</strong></h3>
+
+<p>You can follow the <a href="https://gohugo.io/getting-started/installing/" target="_blank">setup instrutions</a> from <a href="https://gohugo.io/" target="_blank">Hugo&rsquo;s official website</a>. They have instruction for each platform. I will be using Mac in this tutorial.</p>
+
+<p>After set up is completed .You can check if Hugo is installed correctly using below command. It should print current installed verions of Hugo</p>
+
+<pre><code>hugo version                                                                                                            
+Hugo Static Site Generator v0.55.6/extended darwin/amd64 BuildDate: unknown
+</code></pre>
+
+<p>Lets move on to next step.</p>
+
+<h3 id="2-create-project"><strong>2. Create Project</strong></h3>
+
+<p>If you want to check out the finished blog you can check at <a href="https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io/" target="_blank">demoblog-bhanuchaddha.github.io</a>. We will create similar website in this blog.</p>
+
+<p>Go to your command line and run below commands</p>
+
+<pre><code>hugo new site demo-blog
+
+</code></pre>
+
+<p>You would see below result. Your basic hugo project is ready now.</p>
+
+<pre><code>Congratulations! Your new Hugo site is created in /Users/bhanuchaddha/Documents/project/demo-blog.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre>
+
+<p>Hugo at core is static site generator. But it does not govern look and feel of your website. You can create different type of website using Hugo like Landing Page, Blog, Company website, Documentation, Portfolio, Resume and Podcast. You can decide your own layout and presentation and organize those yourself. But thanfully you dont have to create everything from the scrach. You can use any of the exiting available <a href="https://themes.gohugo.io/" target="_blank">Hugo&rsquo;s themes</a> and customize it.</p>
+
+<p>For our blog website we would use <a href="https://themes.gohugo.io/hugo-casper-two/" target="_blank">Casper Two</a> theme.</p>
+
+<p><strong>Installing Theme</strong></p>
+
+<p>Type below commands to install theme.</p>
+
+<pre><code> ~/Documents/project cd demo-blog
+
+ # Initialize git repository    
+ ~/Documents/project/demo-blog  git init                                                                                
+Initialized empty Git repository in /Users/bhanuchaddha/Documents/project/demo-blog/.git/
+</code></pre>
+
+<p>Installing theme is not like installing Hugo. We would just map theme as submodule in our git project. By doing this we would not clone the theme in our own project but just add the reference of <a href="https://github.com/eueung/hugo-casper-two.git" target="_blank">casper-two</a> theme in our project. Hugo will automatically use the theme while generating the static content. You can read about git submodules <a href="https://github.blog/2016-02-01-working-with-submodules/" target="_blank">here</a></p>
+
+<pre><code> # Add theme as submodule
+git submodule add https://github.com/eueung/hugo-casper-two.git themes/casper-two
+
+</code></pre>
+
+<p>You will see below output</p>
+
+<pre><code>Cloning into 'casper-two'...
+remote: Enumerating objects: 522, done.
+remote: Total 522 (delta 0), reused 0 (delta 0), pack-reused 522
+Receiving objects: 100% (522/522), 3.96 MiB | 5.28 MiB/s, done.
+Resolving deltas: 100% (233/233), done.
+
+</code></pre>
+
+<p><strong>Adding Configuring</strong></p>
+
+<p>Open your project in code editor of your choice. I would be using <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> in this tutorial. Every theme require some configuration changes.</p>
+
+<p>Replace content in <code>config.toml</code> file with below</p>
+
+<pre><code>baseurl         = &quot;&quot;
+theme           = &quot;casper-two&quot;
+languageCode    = &quot;en-US&quot;
+disqusShortname = &quot;&quot;
+paginate        = 6
+#SectionPagesMenu = &quot;main&quot;
+
+[params]
+  title       = &quot;&lt;Your Name&gt;'s blog&quot;
+  subtitle    = &quot;Blog | Tutorial&quot;
+
+  cover       = &quot;&quot;
+  description = &quot;&lt;Your Name&gt;'s blog&quot;
+  metaDescription = &quot;&quot;
+  googleAnalytics = &quot;&quot;
+  customCSS = []
+  RSSLink = &quot;&quot;
+
+  twitterName = &quot;&lt;Your twitter username&gt;&quot;
+  fbName = &quot;&lt;Your fb username&gt;&quot;
+  githubName = &quot;&lt;Your github username&gt;&quot;
+  linkedinName = &quot;&lt;Your linkedin username&gt;&quot;
+  # mediumName = &quot;&lt;Your medium username&gt;&quot; // disabled medium link
+
+  logo = &quot;&quot;
+  orgName = &quot;EM&quot;
+  orgWebsite = &quot;&quot;
+  orgDescription = &quot;&quot;
+
+  author = &quot;EM&quot;
+  authorAvatar = &quot;&quot;
+  authorLocation = &quot;&lt;Your Location&gt;&quot;
+  authorWebsite = &quot;&quot;
+  authorDescription = &quot;&quot;
+
+  pageNotFoundTitle = &quot;404 - Page not found&quot;
+
+  #casper or caspertwo
+  singleViewStyle = &quot;casper&quot;
+
+[permalinks]
+  post = &quot;/:slug/&quot;
+
+[[menu.main]]
+  name = &quot;Blog&quot;
+  url = &quot;/&quot;
+  weight = 200
+
+[[menu.main]]
+  name = &quot;Tutorial&quot;
+  url = &quot;/categories/tutorial/&quot;
+  weight = 5
+</code></pre>
+
+<p>I you wish to see final configuration, you can check it <a href="https://github.com/bhanuchaddha/demo-blog/blob/master/config.toml" target="_blank">here</a></p>
+
+<p>Now go to you root directory <code>demo-blog</code> and run below command</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>This will start a local server at <a href="http://localhost:1313" target="_blank">http://localhost:1313</a>. If you go to this url using any browser,   you should see below</p>
+
+<p><img src="/image/3/initialBlog.png" alt="Initial Blog Website" /></p>
+
+<p>Wow!! your blog website is almost setup. The only thing missing is your first blog. Which we would write in next section.</p>
+
+<p>Aditionaly You can modify configuration of you blog by changing the properties in <code>config.toml</code>.</p>
+
+<ul>
+<li><strong>baseurl</strong> is used to specify your homepage. It is used as root of your blog. I would come back to this later in blog.</li>
+<li><strong>cover</strong> can be used to configure cover image ( similar to facebook) of your blog.</li>
+<li><strong>authorAvatar</strong> can be used to configure logo of auther. This logo is present below each article infront of auther name. Check the logo in front of auther name in <a href="https://bhanuchaddha.github.io/using-redis-with-spring-boot/" target="_blank">this</a> blog.</li>
+<li><strong>menu</strong> of the blog is decided by the cofiguration elements like <code>[[menu.main]] name = &quot;Blog&quot; url = &quot;/&quot; weight = 200</code> . Here we have configured one main menu and one catagory menu. This catagory menu poin to the <code>tutorial</code> catagory. Later in tutotial I would explain how to specify the catagory of the blog.</li>
+</ul>
+
+<p>Thats it for basic structure, lets create our first blog now.</p>
+
+<h3 id="3-write-your-blog"><strong>3. Write your blog</strong></h3>
+
+<p>Go to <code>content</code> directory in your project and create new directory named <code>post</code>. Name of the directory is important here.
+Inside <code>post</code> directory create new file named <code>first-blog.md</code>[1]. Here file extension stands for MarkDown. This is wildy popular way of format your text with minimal boiler plate. You can read further about it <a href="https://www.markdownguide.org/" target="_blank">here</a></p>
+
+<p>Copy the below content in the <code>first-blog.md</code> and save your changes.[2]</p>
+
+<pre><code>---
+title: &quot;First Blog&quot;
+date: 2019-06-06T22:11:42+02:00
+author: &quot;&lt;Your Name&gt;&quot;
+linktitle: First Blog
+weight: 1
+#authorAvatar: image/logo.svg
+image: image/first-blog.png
+tags : [
+    &quot;firstBlog&quot;,
+    &quot;tutorial&quot;,
+]
+categories : [
+    &quot;tutorial&quot;
+]
+draft: false
+---
+
+This is my first blog. I have created this blog withing one hour using free tools like
+
+* Git
+* MarkDown
+* Hugo
+
+This is really easy anyone can do it. You can follow [this](https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/) guide for more details.
+
+
+</code></pre>
+
+<p>Now take any image and put that inside <code>image</code> folder inside <code>static</code> folder in your project. If <code>image</code> directory do not exist create it. Rename this image to <code>first-blog.jpg</code>. For this blog I am taking image from awesome free image resource <a href="https://www.pexels.com/" target="_blank">Pexels</a>.[3]</p>
+
+<p>Now go to <code>http://localhost:1313</code> you will see below</p>
+
+<p><img src="/image/3/finishedBlog.png" alt="Finished Blog Website" /></p>
+
+<p>Awesome!!! isnt it. You blog website is up and running. It only took some configuraiton and text files.</p>
+
+<p>If your server is not running already, execute below command to start your server again.</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>So what tha hell we have done above. Let me Explain</p>
+
+<ul>
+<li>[1] To create new blog you just need to create new  <code>*.md</code> file in post folder.</li>
+<li>[2] Top of the blog content between <code>---</code> lines is called front matter. This is metadata of your blog and let you add author, tags and catagories to the blog.</li>
+<li>[3] For each blog you need to have a cover image. This image is configured using <code>image</code> front matter key.</li>
+</ul>
+
+<p>Now when your website is ready, Its time to publish this website.</p>
+
+<h3 id="set-up-git-repositories"><strong>Set up Git repositories</strong></h3>
+
+<p>We will create 2 GitHub repositories for our project</p>
+
+<ol>
+<li>Frist Repository for out project</li>
+<li>Secound repository to host our blog as Github User page</li>
+</ol>
+
+<p>We would also link both these repositories using Github submodules. But for the context of this blog you dont need to learn the Github submodules, if dont know it already. You can just follow the command provided in the blog. A good resource to learn about Github submodules is <a href="https://github.blog/2016-02-01-working-with-submodules/" target="_blank">here</a>.</p>
+
+<p>Create an repository like <a href="https://github.com/bhanuchaddha/demo-blog" target="_blank">https://github.com/bhanuchaddha/demo-blog</a>. And one more repository like <a href="https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io" target="_blank">https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io</a>. Second repository must have be in <code>&lt;Your-Github-User-Name&gt;.github.io</code>. It is important because Github allows only 1 User/Organization page and multiple project pages. We are using Github User page for our blog.  Github initialize the staic website for you if you sprcify <code>github.io</code> at the end of a repository name.</p>
+
+<p>Now go to the root of your project and execute below commands.</p>
+
+<pre><code># set submodule mapping
+git submodule add -b master https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io public
+
+# commit any uncommited changes
+git commit -a -m &quot;init&quot;
+
+# set remote origin branch
+# git remote add origin https://github.com/bhanuchaddha/demo-blog.git
+git remote add origin &lt;complete-repository-url&gt;
+
+# push changes
+git push -u origin master
+</code></pre>
+
+<p>We have mapped <code>public</code> directory in root as submodule, which is mapped to <code>&lt;Your-GitHub-User-Name&gt;&gt;.github.io</code> repository. If you check the public directory it is empty now.</p>
+
+<p>But if you run below command in the root directory. You will see <code>Hugo</code> generate the static content for us based upon our configuration and content.</p>
+
+<p>Before we run the below command there is one last thing we need to change in our <code>config.toml</code> file. Remember we kept <code>baseurl</code> as empty. Because now we know the url of our blog website repository, we can set this value. Set below for baseurl</p>
+
+<p><code>&quot;https://&lt;Your-GitHub-User-Name&gt;.github.io&quot;</code></p>
+
+<pre><code>hugo -t casper-two
+</code></pre>
+
+<p>We have mapped <code>public</code> to <code>&lt;yournYour-GitHub-User-Nameame&gt;.github.io</code> repository because we want to push the content of only <code>public</code> directory to <code>&lt;Your-GitHub-User-Name&gt;.github.io</code>.</p>
+
+<h3 id="push-your-content"><strong>Push your content</strong></h3>
+
+<p>Now we have set up our repositories and created our static content in <code>public</code> directory . The only step remain is pushing our local content to GitHub. Run below commands</p>
+
+<pre><code># go to public directory
+cd public
+
+# commit static content
+git commit -a -m &quot;init blog content&quot;
+
+# push your content
+git push
+</code></pre>
+
+<p>And thats it. Now if you go to <a href="https://&lt;Your-GitHub-User-Name&gt;.github.io" target="_blank">https://<Your-GitHub-User-Name>.github.io</a> , you will see your website is up and ready now. You should see somthing like <a href="https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io/" target="_blank">https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io/</a>.</p>
+
+<p>You can match your content and configuration with below repositories. The only difference is the value of <code>baseurl</code> that is because I have set up this demo website as Project Site and not the User Site. I already have my official blog website as User Site.</p>
+
+<ol>
+<li><a href="https://github.com/bhanuchaddha/demo-blog" target="_blank">Project Repository</a></li>
+<li><a href="https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io" target="_blank">Blog Repository</a></li>
+</ol>
+
+<p>If you are still reading this blog. I know it was a long post. :( . But I hope it was worth it.
+Do reach me out if you have any questions.</p>
+    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://bhanuchaddha.github.io/image/logo.svg" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://bhanuchaddha.github.io/">Bhanu Chaddha</a></h4>
+                <p>Web Developer</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://bhanuchaddha.github.io/spring-boot-devtools-on-intellij/">
+      <div class="post-card-image" style="background-image: url(https://bhanuchaddha.github.io/image/devtool.png)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://bhanuchaddha.github.io/spring-boot-devtools-on-intellij/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #backend 
+              #java 
+              #intellij 
+              #springboot 
+              #development  </span>
+              
+              <h2 class="post-card-title">Spring Boot Devtools on Intellij</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.
+Spring Boot provide niche feature of hot reloading for a Spring Boot application.
+It recompile your java application as soon as you make a change. But most important aspect is that it only recompile only those files in which changes are made. Thus process take quite a short time compared to complete application build. ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://bhanuchaddha.github.io/image/logo.svg" alt="Author" />
+          <span class="post-card-author"><a href="/">Bhanu Chaddha</a></span>
+      </footer>
+    </div>
+</article>
+      
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://bhanuchaddha.github.io/">
+      
+      <span></span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">Create your own blog website using Hugo in less than 1 hour for free</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Create%20your%20own%20blog%20website%20using%20Hugo%20in%20less%20than%201%20hour%20for%20free&amp;url=https%3a%2f%2fbhanuchaddha.github.io%2fcreate-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbhanuchaddha.github.io%2fcreate-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/">EM</a>  <br>
+      
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        <a href="https://www.facebook.com/bhanu.chaddha" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://twitter.com/bhanu_chaddha" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/bhanuchaddha" target="_blank" rel="noopener">Github</a>
+        <a href="https://www.linkedin.com/in/bhanu-chaddha" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://medium.com/@bhanuchaddha" target="_blank" rel="noopener">Medium</a>
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://bhanuchaddha.github.io/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>

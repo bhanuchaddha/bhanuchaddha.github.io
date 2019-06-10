@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on </title>
+    <link>https://bhanuchaddha.github.io/tags/blog/</link>
+    <description>Recent content in blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 05 Jun 2019 01:22:42 +0200</lastBuildDate>
+    
+	<atom:link href="https://bhanuchaddha.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create your own blog website using Hugo in less than 1 hour for free</title>
+      <link>https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/</link>
+      <pubDate>Wed, 05 Jun 2019 01:22:42 +0200</pubDate>
+      
+      <guid>https://bhanuchaddha.github.io/create-your-own-blog-website-using-hugo-in-less-than-1-hour-for-free/</guid>
+      <description>In the technical age, publishing articles online is a great way to express yourself. It can be of any form like tutorial, blogs, review, editorials and much more.
+It is almost defacto to use Medium for bloging now a days. It provides many benfits like :
+ Content focus. Formatting is handled by Medium platform itself SEO (Search Engin Optimization) to promote your article in google search Easy interface to write article in browser itself And many more like support for images, videos and code reference using Gist  Then Why shoud you have your own blog?</description>
+    </item>
+    
+  </channel>
+</rss>
